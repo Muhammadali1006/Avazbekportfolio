@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Avazbek's Portfolio</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon" />
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com'%}" rel="preconnect" />
+  <link href="{% static 'https://fonts.gstatic.com'%}" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet" />
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet" />
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="{% static 'assets/img/my-profile-img.jpg' %}" alt="" class="img-fluid rounded-circle" />
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Avazbek Hazratov</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://t.me/codewithavaz_py" target="_blank" class="twitter"><svg xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+        </svg></a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.324 0 .725 0h14.55c.4 0 .725.513.725 1.146v13.708c0 .633-.325 1.146-.725 1.146H.725A.723.723 0 0 1 0 14.854V1.146zM4.943 12.497V5.797H2.688v6.7h2.255zM3.816 4.75c.837 0 1.352-.545 1.352-1.23-.015-.698-.515-1.23-1.337-1.23-.823 0-1.353.532-1.353 1.23 0 .684.514 1.23 1.322 1.23h.016zm4.396 7.747h2.256v-3.357c0-.179.013-.357.064-.482.14-.357.46-.727 1-.727.705 0 .986.548.986 1.348v3.218h2.255V9.27c0-1.708-.904-2.504-2.108-2.504-1.007 0-1.46.55-1.714 1.034h.015V5.797H8.213c.03.543 0 6.7 0 6.7z" />
+        </svg>
+      </a>
+
+      <a href="https://www.youtube.com/@CodeWithAvaz_py" target="_blank" class="google-plus"><svg
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+        </svg></a>
+      <a href="tel:+998994104879" class="linkedin" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+        </svg>
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li>
+          <a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="bi bi-laptop navicon"></i> Skills</a>
+        </li>
+        <li>
+          <a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a>
+        </li>
+        <li>
+          <a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="{% static 'assets/img/Avazbek_ustoz.jpg'%}" alt="" data-aos="fade-in" class="" />
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Avazbek Hazratov</h2>
+        <p>
+          I'm
+          <span class="typed" data-typed-items="Back-end developer, IT - Teacher, Freelancer"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+      </div>
+    </section>
+    <!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>
+          Welcome to my professional space! I'm Avazbek Hazratov, a passionate
+          Django Backend Developer with a commitment to building robust and
+          scalable web applications. Results-oriented Django Backend Developer
+          in designing and implementing robust backend solutions for education
+          management dashboards.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="{% static 'assets/img/my-profile-img.jpg' %}" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 content">
+            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">More information about me :</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Birthday:</strong> <span>1 April 2002</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Website:</strong>
+                    <span><a href="#">My web site</a></span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Phone:</strong> <span>+998 99 410 48 79</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>City:</strong> <span>Tashkent, Uzbekistan</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                    <span>22</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong> <span>Middle</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Email:</strong>
+                    <span>programmingavazbek@gmail.com</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Freelance:</strong> <span>Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Proven expertise in developing scalable APIs. optinizing
+              database performance, and collaborating with cross-functional
+              teams to deliver impactful software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>
+                <strong>Happy Clients</strong> <span>consequuntur quae</span>
+              </p>
+            </div>
+          </div>
+          <!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>
+                <strong>Projects</strong>
+                <span>adipisci atque cum quia aut</span>
+              </p>
+            </div>
+          </div>
+          <!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>
+                <strong>Hours Of Support</strong>
+                <span>aut commodi quaerat</span>
+              </p>
+            </div>
+          </div>
+          <!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>
+                <strong>Hard Workers</strong>
+                <span>rerum asperiores dolor</span>
+              </p>
+            </div>
+          </div>
+          <!-- End Stats Item -->
+        </div>
+      </div>
+    </section>
+    <!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="skills">
+        <div class="taggg-list">
+          <div class="loop-sliderrr" style="--duration: 16638ms; --direction: reverse">
+            <div class="innerrr">
+              <div class="taggg">
+                <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                    alt="" /></span>
+                Python
+              </div>
+              <div class="taggg">
+                <span><img src="https://cdn-icons-png.flaticon.com/512/5815/5815526.png" alt="" /></span>
+                OOP
+              </div>
+              <div class="taggg">
+                <span><img src="https://juststickers.in/wp-content/uploads/2016/05/django-badge.png" alt="" /></span>
+                Django
+              </div>
+              <div class="taggg">
+                <span><img src="https://juststickers.in/wp-content/uploads/2016/05/django-badge.png" alt="" /></span>
+                Django ORM
+              </div>
+              <div class="taggg">
+                <span><img
+                    src="https://static.codingforentrepreneurs.com/media/series/django-rest-framework-2022/73cb338f-9691-4f95-8895-50f4210ad803.jpg"
+                    alt="" /></span>
+                DRF
+              </div>
+              <div class="taggg">
+                <span><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="" /></span>
+                Fast API
+              </div>
+              <div class="taggg">
+                <span><img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20220812/pngtree-iconic-logo-design-for-uiux-app-with-sql-database-theme-photo-image_25169742.jpg"
+                    alt="" /></span>
+                Poster SQL
+              </div>
+              <div class="taggg">
+                <span><img src="https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png"
+                    alt="" /></span>
+                Git
+              </div>
+              <div class="taggg">
+                <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png"
+                    alt="" /></span>
+                Docker
+              </div>
+              <div class="taggg">
+                <span><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></span>
+                Git Hub
+              </div>
+            </div>
+          </div>
+          <div class="loop-sliderrr" style="--duration: 15936ms; --direction: normal">
+            <div class="innerrr">
+              <div class="taggg">
+                <span><img src="https://static-00.iconduck.com/assets.00/gunicorn-icon-2048x1245-14wjcllu.png"
+                    alt="" /></span>
+                Gunicorn
+              </div>
+              <div class="taggg">
+                <span><img src="https://static-00.iconduck.com/assets.00/file-type-nginx-icon-1793x2048-yt5u3fm7.png"
+                    alt="" /></span>
+                Nginx
+              </div>
+              <div class="taggg">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Celery_logo.png" alt="" /></span>
+                Celery
+              </div>
+              <div class="taggg">
+                <span><img src="https://static-00.iconduck.com/assets.00/rabbitmq-icon-484x512-s9lfaapn.png"
+                    alt="" /></span>
+                RabbitMq
+              </div>
+              <div class="taggg">
+                <span><img src="https://images.opencollective.com/aiogram/459099a/logo/256.png" alt="" /></span>
+                Aiogram 3
+              </div>
+              <div class="taggg">
+                <span><img src="https://static-00.iconduck.com/assets.00/unit-testing-icon-2048x2048-8bw7nxcv.png"
+                    alt="" /></span>
+                Unit Test
+              </div>
+              <div class="taggg">
+                <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pytest_logo.svg/1500px-Pytest_logo.svg.png"
+                    alt="" /></span>
+                Py Test
+              </div>
+              <div class="taggg">
+                <span><img src="https://logowik.com/content/uploads/images/aws-api-gateway.jpg" alt="" /></span>
+                API Gateway
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <h1>More informormation about me :</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          {% for sumary in sumaries %}
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Avazbek Hazratov</h4>
+              <p>
+                <em>{{sumary.description}}</em>
+              </p>
+              <ul>
+                <li>{{sumary.city}}</li>
+                <li>{{sumary.number}}</li>
+                <li>{{sumary.email}}</li>
+              </ul>
+            </div>
+            <!-- Edn Resume Item -->
+            {% endfor %}
+
+            <h3 class="resume-title">Education</h3>
+            {% for education in educations %}
+            <div class="resume-item">
+              <h4>{{education.name}}</h4>
+              <h5>2022</h5>
+            </div>
+            <!-- Edn Resume Item -->
+            {% endfor %}
+          </div>
+
+
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            {% for proex in proexies %}
+            <div class="resume-item">
+              <h4>{{proex.pro_name}}</h4>
+              <h5>2024</h5>
+              <p><em>{{proex.name}}</em></p>
+              <ul>
+                <li>
+                  {{proex.one_description}}
+                </li>
+                <li>
+                  {{proex.two_description}}
+                </li>
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            {% for category in categories %}
+            <li data-filter=".filter-{{category}}">{{category}}</li>
+<!--            <li data-filter=".filter-product">Product</li>-->
+<!--            <li data-filter=".filter-branding">Branding</li>-->
+<!--            <li data-filter=".filter-books">Books</li>-->
+            {% endfor %}
+          </ul>
+          <!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            {% for project in projects %}
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="width: 340px;">
+              <div class="portfolio-content h-100">
+                <img style="width: 340px; height: 220px;" src="{{project.image.url}}" class="img-fluid" alt="image" />
+                <div class="portfolio-info">
+                  <h4>{{project.name}}</h4>
+                  <p>{{project.description}}</p>
+                  <a href="{{project.image.url}}" title="{{project.name}}" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{project.url}}" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            <!-- End Portfolio Item -->
+          </div>
+          <!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section>
+    <!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          {% for servise in servises %}
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <div>
+              <h4 class="title">
+                <a class="stretched-link">{{servise.name}}</a>
+              </h4>
+              <p class="description">
+                {{servise.description}}
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+          {% endfor %}
+
+        </div>
+      </div>
+    </section>
+    <!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+          <div class="swiper-wrapper">
+            {% for human in people %}
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>{{human.description}}</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{{human.image.url}}" class="testimonial-img" alt="" />
+                <h3>{{human.name}}</h3>
+                <h4>{{human.job}}</h4>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Tashkent, Uzbekistan</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+998 99 410 48 79</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>programmingavazbek@gmail.com</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <iframe style="object-fit: contain; margin: 0; width: 100%; border: 0;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1793.124474673444!2d69.20390867811639!3d41.28658360033596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba28509139f%3A0xc136ab2e7dfdd14a!2sMARS%20IT%20SCHOOL!5e0!3m2!1sen!2s!4v1729528830424!5m2!1sen!2s"
+                height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action=""  method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              {% csrf_token %}
+              <div class="row gy-4">
+                <div class="col-md-6">{{form.name}}
+                </div>
+
+                <div class="col-md-6">{{form.email}}
+                </div>
+
+                <div class="col-md-12">{{form.subject}}
+                </div>
+
+                <div class="col-md-12">{{form.message}}
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End Contact Form -->
+        </div>
+      </div>
+    </section>
+    <!-- /Contact Section -->
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Avazbek's Portfolio</strong>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+</body>
+
+</html>
